@@ -4,16 +4,14 @@ This project is a Java Spring Boot application that provides a simple API for ma
 
 The project is designed with RESTful APIs for efficient interaction with the database, providing endpoints to manage banks' details such as net worth, minimum deposits, and descriptions.
 
-src/
- └── main/
-     └── java/
-         └── com/
-             └── privateBanking/
-                 ├── controller/   # API controllers for handling HTTP requests
-                 ├── dto/          # Data Transfer Objects
-                 ├── entity/       # Entity classes representing the data model
-                 ├── repository/   # Repository interfaces for data access
-                 ├── services/     # Business logic for CRUD operations
-                 └── CrudApplication.java  # Main class for bootstrapping the application
+The project contains:
+controller/   # API controllers for handling HTTP requests
+dto/          # Data Transfer Objects
+entity/       # Entity classes representing the data model
+repository/   # Repository interfaces for data access
+services/     # Business logic for CRUD operations
+CrudApplication.java  # Main class for bootstrapping the application
+
+
 
                      
