@@ -1,17 +1,39 @@
-# private_banking
-My first project on GitHub. This is a project I did during my summer internship at QazPost. 
-This project is a Java Spring Boot application that provides a simple API for managing data related to top private banks. The application supports CRUD (Create, Read, Update, Delete) operations for bank records, allowing users to add, retrieve, update, and delete bank information.
+# Private Banking Records API
 
-The project is designed with RESTful APIs for efficient interaction with the database, providing endpoints to manage banks' details such as net worth, minimum deposits, and descriptions.
+A Java / Spring Boot REST application for managing information about private banks. Developed as an early project during my QazPost internship.
 
-The project contains:
-controller/   # API controllers for handling HTTP requests
-dto/          # Data Transfer Objects
-entity/       # Entity classes representing the data model
-repository/   # Repository interfaces for data access
-services/     # Business logic for CRUD operations
-CrudApplication.java  # Main class for bootstrapping the application
+[Author profile](https://github.com/jigduman) · [All projects](https://github.com/jigduman/jigduman/blob/main/PROJECTS.md)
 
+## Scope
 
+Create, retrieve, update, and delete bank records, including fields such as net worth, minimum deposit requirements, and descriptions. This project is a bank-information API, not a live banking or transaction-processing system.
 
-                     
+## Stack
+
+Java 21, Spring Boot 3.3.1, Spring Web, Spring Data JPA, PostgreSQL, Maven, Spring Cloud Eureka client, and a Springdoc OpenAPI dependency.
+
+## Repository guide
+
+The application lives in `privatebanking/`:
+
+| Directory | Purpose |
+| --- | --- |
+| `src/main/java/com/privateBanking/crud/controller/` | HTTP controllers |
+| `src/main/java/com/privateBanking/crud/entity/` | Record definitions |
+| `src/main/java/com/privateBanking/crud/repository/` | Persistence |
+| `src/main/java/com/privateBanking/crud/services/` | CRUD logic |
+| `src/main/resources/` | Application configuration |
+
+## Local setup
+
+1. Install JDK 21, Maven, and PostgreSQL.
+2. Configure a local database in `privatebanking/src/main/resources/application.yml`.
+3. Review Eureka settings for your environment.
+4. Run from the application directory:
+
+```bash
+cd privatebanking
+mvn spring-boot:run
+```
+
+Run existing tests with `mvn test` after configuring their required services. This repository retains its original learning implementation; use synthetic data when experimenting.
